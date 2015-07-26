@@ -104,7 +104,7 @@ Final_DS is (10299 rows * 68 columns)
 
 **============================================**
 
-**Step 3 - SET ACTIVITY NAMES ** 
+**Step 3 - SET ACTIVITY NAMES**
 
 **============================================**
 
@@ -112,7 +112,7 @@ An obvious for () loop !
 
 **============================================**
 
-**Step 4 - SET COLUMNS NAMES ** 
+**Step 4 - SET COLUMNS NAMES**
 
 **============================================**
 
@@ -122,18 +122,18 @@ At the end : Write the Final_DS in a File for reference
 
 **============================================**
 
-**Step 5 - CREATE THE SECOND SUMMARY DS ** 
+**Step 5 - CREATE THE SECOND SUMMARY DS**
 
 **============================================**
 
 **CHOICE** I have decided to present the Summary DS using the wide format.
 
 Therefore, starting from Final_DS dataset we have to transform it twice :
- 
+
 1) to a long format and 
 2) to a wide format (180 subject-activity rows and 66 measurement columns that contain mean values for each subject-activity).
 
-This step is divided in 5 substeps:
+Step 5 is divided in 5 substeps:
 
 1) Create a vector variables to select. This prepare the melt function.
 
