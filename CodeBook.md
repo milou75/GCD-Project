@@ -24,13 +24,13 @@ See below information about the input measurement data and then details about th
 
 # 2) Input Measurement Data and Dataset
 
-Original measurement data were provided as input to the project.  (561 variables, 10299 observations splitter in two sets). 
+Original measurement data were provided as input to the project.  (561 variables, 10299 observations split in two sets : test and train). 
 
-Data were taken from an accelerometer and gyroscope embedded in a Samsung smartphone. All values were pre-processed and are numeric within [-1,1] range.
+Data were output from an accelerometer and gyroscope embedded in a Samsung smartphone. All values were pre-processed and are numeric within [-1,1] range.
 
 The README.txt and features_info.txt provided with the original dataset (under UCI HAR Dataset directory) fully define the different variables. Please refer to those files for more details about the input data.
 
-Only mean and standard deviation related features were extracted from the project input data (observations of 66 variables for 10299 subject-activity). For reference, below is a list of Features selected for the project and their position in the original dataset  : 
+Only mean and standard deviation related features were extracted from the project input data (observations of 66 variables for 10299 subject-activity). For reference, below is a list of Features selected for the project and their column position in the original dataset  : 
 
 - 1             tBodyAcc-mean()-X
 - 2             tBodyAcc-mean()-Y
@@ -104,13 +104,16 @@ Only mean and standard deviation related features were extracted from the projec
 Structure : Column id / Column Label / Data Type / Values or Values Range / Comment
 
 1 / Subject / numeric / 1..30 /
+
 subject_id for each of the 30 individuals taking part in the experiment.
 
 2 / Activity / character string / WALKING, WALKING_UPSTAIRS,  WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING /
+
 Reflects the (only) 6 activities performed by the subjects during the experiments (video recorded during experiments)
 
 3 to 68 / cf. Feature List below with column position / numeric / [-1,1] /
-For each from the Feature List below (col 3 to 68) the value reflect the mean value of the feature when subject I (1..30) was performing one of the 6 activities. Native experiment results were provided in the input dataset (10299 observations in total).
+
+For each from the Feature List below (col #3 to #68) the value reflect the mean value of the feature when subject #i (i in 1..30) was performing one of the 6 activities. Native experiment results were provided in the input dataset (10299 observations in total).
 
 - 3            Mean - tBodyAcc-mean()-X
 - 4            Mean - tBodyAcc-mean()-Y
