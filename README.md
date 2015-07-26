@@ -1,5 +1,7 @@
 **============================================================**
+
 **Coursera - Getting and Cleaning Data - Course Project**
+
 **===========================================================**
 
 **Configuration**
@@ -13,7 +15,9 @@ The script is organized as follows:
 - Step 1 to Step 5 are aligned to project's five questions 1) to 5). (Note that Steps 3 and 4 are rather straightforward and do not require extended comments)
 
 **====================================================**
+
 **Step 0 - Getting Data and Preparing the Environment**
+
 **====================================================**
 
 Create a directory and set your working directory (.) as this directory.
@@ -23,7 +27,9 @@ Step 0 downloads the zip file in the ./DOWNLOADED directory and unzip the datase
 **Note** : at the end of the step the ./DOWNLOADED directory is still there for reference.   
 
 **==========================================**
+
 **Step 1 - Merging Train and Test Dataset** 
+
 **==========================================**
 
 From 2*3 files to 1 full ordered DF containing the same information. The DF is sorted by subjects id (1..30).
@@ -60,7 +66,9 @@ Note: this extra column will be removed in Step 2.
 Full_Ordered_DS contains measurements for subjects (1,2,3,4,5….24,25..30) with obs_id in ascending order for each subject.
 
 **===================================================**
+
 **Step 2 - Extract Useful Measurements Columns Only** 
+
 **===================================================**
 
 This Step 2 starts from Full_Ordered_DS as result of Step 1 and only keep the required columns (subject, activity, mean() and std() columns. The others are removed.
@@ -95,13 +103,17 @@ Built the Final Dataset subsetting the Full_Ordered_Dataset
 Final_DS is (10299 rows * 68 columns)
 
 **============================================**
+
 **Step 3 - SET ACTIVITY NAMES ** 
+
 **============================================**
 
 An obvious for () loop !
 
 **============================================**
+
 **Step 4 - SET COLUMNS NAMES ** 
+
 **============================================**
 
 (subject, Activity, 66 original columns names as provided features.txt file)
@@ -109,7 +121,9 @@ An obvious for () loop !
 At the end : Write the Final_DS in a File for reference
 
 **============================================**
+
 **Step 5 - CREATE THE SECOND SUMMARY DS ** 
+
 **============================================**
 
 **CHOICE** I have decided to present the Summary DS using the wide format.
